@@ -157,7 +157,7 @@ print("4. Cerinta 5")
 print("5. Cerinta 7")
 print("6. Exit")
 
-# Citirea opțiunii utilizatorului
+
 while True:
     optiune = input("Selectati o optiune: ")
 
