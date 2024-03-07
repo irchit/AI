@@ -143,14 +143,35 @@ def cerinta7_gpt():
     print(f"Al {k}-lea cel mai mare element din șirul {sir} este:", result)
 
 
-if __name__ == '__main__':
-    print('cerinta1')
-    cerinta1()
-    print('cerinta2')
-    cerinta2()
-    print('cerinta4')
-    cerinta4()
-    print('cerinta5')
-    cerinta5()
-    print('cerinta7')
-    cerinta7()
+def iesire():
+    print("Iesire din program.")
+    quit()
+
+
+# Meniu
+print("=== MENIU ===")
+print("1. Cerinta 1")
+print("2. Cerinta 2")
+print("3. Cerinta 4")
+print("4. Cerinta 5")
+print("5. Cerinta 7")
+print("6. Exit")
+
+# Citirea opțiunii utilizatorului
+while True:
+    optiune = input("Selectati o optiune: ")
+
+    if optiune == '1':
+        cerinta1()
+    elif optiune == '2':
+        cerinta2()
+    elif optiune == '3':
+        cerinta4()
+    elif optiune == '4':
+        cerinta5()
+    elif optiune == '5':
+        cerinta7()
+    elif optiune == '6':
+        iesire()
+    else:
+        print("Optiune invalida. Va rugam selectati o optiune valida.")
